@@ -1,23 +1,23 @@
 package entities;
 
 public class Address {
-	private String email;
+	private static String email;
 	private String phone;
 	
 	public Address() {
 	}
 
 	public Address(String email, String phone) {
-		this.email = email;
+		Address.email = email;
 		this.phone = phone;
 	}
 
-	public String getEmail() {
+	public static String getEmail() {
 		return email;
 	}
 
 	public void setEmail(String email) {
-		this.email = email;
+		Address.email = email;
 	}
 
 	public String getPhone() {
